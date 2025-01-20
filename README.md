@@ -65,10 +65,10 @@ Well, you can find them in docs
 
 Docs for react prostprocessing effects: <https://react-postprocessing.docs.pmnd.rs/effects/autofocus>
 
+Effects for react postprocessing: <https://react-postprocessing.docs.pmnd.rs/effects/autofocus>
+
 Docs for postprocessing: <https://pmndrs.github.io/postprocessing/public/docs/>
 
 Included effects for postprocessing: <https://github.com/pmndrs/postprocessing?tab=readme-ov-file#included-effects>
 
 Live Demo: <https://pmndrs.github.io/postprocessing/public/demo/#antialiasing>
-
-Effects for react postprocessing: <https://react-postprocessing.docs.pmnd.rs/effects/autofocus>
