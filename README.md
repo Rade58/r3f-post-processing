@@ -33,3 +33,28 @@ r3f implements library above as `@react-three/postprocessing`
 **We don't talk about passes anymore, since we are going to add bunch of effects**
 
 # Implement post processing
+
+we are going to install:
+
+<https://github.com/pmndrs/react-postprocessing>
+
+```
+pnpm add @react-three/postprocessing
+```
+
+Which will also install postprocessing: <https://github.com/pmndrs/postprocessing>
+
+<https://github.com/pmndrs/postprocessing>
+
+We are going to nest `<EffectComposer />`
+
+Developers tend to create new component called `Effect` and they use `EffectComposer` there (In this workshop we are doing everything in Experience component)
+
+in here we don't need to add the first render like we did with normal post processing
+
+## `multisampling` attribute
+
+Multi-sampling is used to prevent the aliasing effect
+By default, its value is at 8 and we can lower it down to 0 in order to disable it completely with the multisampling attribute
+
+this prevent stear effect on the edges
