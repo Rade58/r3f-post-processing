@@ -58,3 +58,17 @@ Multi-sampling is used to prevent the aliasing effect
 By default, its value is at 8 and we can lower it down to 0 in order to disable it completely with the multisampling attribute
 
 this prevent stear effect on the edges
+
+# How to find effect and implement them
+
+Well, you can find them in docs
+
+Docs for react prostprocessing effects: <https://react-postprocessing.docs.pmnd.rs/effects/autofocus>
+
+Docs for postprocessing: <https://pmndrs.github.io/postprocessing/public/docs/>
+
+Included effects for postprocessing: <https://github.com/pmndrs/postprocessing?tab=readme-ov-file#included-effects>
+
+Live Demo: <https://pmndrs.github.io/postprocessing/public/demo/#antialiasing>
+
+Effects for react postprocessing: <https://react-postprocessing.docs.pmnd.rs/effects/autofocus>
