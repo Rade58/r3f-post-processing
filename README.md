@@ -130,3 +130,19 @@ Smaller resolutions of the render will be combined into a bloom texture that is 
 It looks great with good performance
 
 **Good idea if you want to inmplement this in real project is to keep `luminaceThreshold` very low, 0.1 for example (0 is default), but when you want something to start glowing you would go to the material and increase some of the rgb values for `color` by multiplying them with `10` for example**
+
+but be subtele when adding this
+
+## DepthOfField effect
+
+will blur what's closer or further from the set distance
+
+![dof](/notes/images/dof.png)
+
+prop values (docusDistance) are notmalized, they go from 0 to 1 according to camera `near` and `far`
+
+![---](/notes/images/Screenshot%20from%202025-01-21%2013-51-54.png)
+
+so you need to calculate a bit
+
+better use leva to find right values
