@@ -128,3 +128,5 @@ also don't forget to set prop `mipmapBlur` to true
 The mipmap blur will use the same mipmapping used for textures A
 Smaller resolutions of the render will be combined into a bloom texture that is then added to the initial render
 It looks great with good performance
+
+**Good idea if you want to inmplement this in real project is to keep `luminaceThreshold` very low, 0.1 for example (0 is default), but when you want something to start glowing you would go to the material and increase some of the rgb values for `color` by multiplying them with `10` for example**

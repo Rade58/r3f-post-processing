@@ -79,7 +79,9 @@ export function Experience() {
           intensity={0.2} // The bloom intensity.
           mipmapBlur
           //
-          luminanceThreshold={0}
+          // luminanceThreshold={0} // default 0.9
+          luminanceThreshold={0.1}
+          // there is more props
         />
       </EffectComposer>
       {/* -------------------------------------------- */}
@@ -100,7 +102,9 @@ export function Experience() {
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial
           // color="mediumpurple"
-          color={[55.8, 3.2, 20.4]}
+          // if you want stronger glow you increse these values
+          // we multiply some of them bty 10
+          color={[5.8 * 10, 3.2, 20.4]}
           toneMapped={false}
         />
       </mesh>
