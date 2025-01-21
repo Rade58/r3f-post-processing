@@ -148,3 +148,23 @@ so you need to calculate a bit
 better use leva to find right values
 
 # Uncomment all effects we did from Viggnete to DepthOfField to check performances
+
+Well, for author of the workshop it was good
+
+But for me it was different in terms of values that are displayed in performance monitor
+
+I didn't notice any drop in performances with my naked eye, but my laptop isn't that bad eather so I could see some drop
+
+In my case CPU values went up to 8, so they wen above 0 which they didn't for workshop author, **I also tested on bigger screen**
+
+I didn't have 60fps, more like 45, and author of the workshop had 60
+
+But also I played around with values more than him
+
+**IN FULL RESOULTION PERFORMANCES WILL DROP**
+
+**BIGGER SCREEN, LIKE TV, YOU WILL HAVE PERFORMANCE DROP, EXACTLY**
+
+**WHAT IS IMPORTANT THAT EFFECTS ARE BEING COMBINED AND OPTIMIZED**
+
+**PERFORMANCES REALLY DEPEND ON YOUR COMPUTER**
