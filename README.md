@@ -168,3 +168,11 @@ But also I played around with values more than him
 **WHAT IS IMPORTANT THAT EFFECTS ARE BEING COMBINED AND OPTIMIZED**
 
 **PERFORMANCES REALLY DEPEND ON YOUR COMPUTER**
+
+# Our custom effect
+
+**This incrementation will be very hard**
+
+We need to create effect for Post Processing and then make it available in r3f (Main issue)
+
+because post processing is merging the effects into one shader we need to follow very specific rules

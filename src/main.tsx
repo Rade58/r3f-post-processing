@@ -12,7 +12,8 @@ import "./index.css";
 // import { App } from "./5_noise_effect/App";
 // import { App } from "./6_bloom_effect/App";
 // import { App } from "./7_depth_of_field_effect/App";
-import { App } from "./8_check_performances_with_a_lot_of_effects/App";
+// import { App } from "./8_check_performances_with_a_lot_of_effects/App";
+import { App } from "./9_custom_effect/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
