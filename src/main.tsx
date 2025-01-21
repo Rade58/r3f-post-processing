@@ -8,7 +8,9 @@ import "./index.css";
 // -----------------------------------------------------------
 // import { App } from "./2_implementing/App";
 // import { App } from "./3_vignette_effect/App";
-import { App } from "./4_glitch_effect/App";
+// import { App } from "./4_glitch_effect/App";
+// import { App } from "./5_noise_effect/App";
+import { App } from "./6_bloom_effect/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

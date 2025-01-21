@@ -12,8 +12,17 @@ import {
   Vignette,
   Glitch,
   Noise,
+  Bloom,
 } from "@react-three/postprocessing";
-import { BlendFunction, GlitchMode } from "postprocessing";
+import {
+  BlendFunction,
+  GlitchMode,
+  BlurPass,
+  Resizer,
+  KernelSize,
+  Resolution,
+  MipmapBlurPass,
+} from "postprocessing";
 
 // import { useControls } from "leva";
 
@@ -54,13 +63,23 @@ export function Experience() {
           active
           ratio={0.85}
         />
-        */}
         <Noise
           premultiply
           // blendFunction={BlendFunction.ADD}
           // blendFunction={BlendFunction.SOFT_LIGHT}
           // this looks like an old tv
           blendFunction={BlendFunction.LUMINOSITY}
+        />
+        */}
+
+        <Bloom
+          //
+          // test props with darker background
+          //
+          intensity={0.2} // The bloom intensity.
+          mipmapBlur
+          //
+          luminanceThreshold={0}
         />
       </EffectComposer>
       {/* -------------------------------------------- */}
@@ -77,18 +96,25 @@ export function Experience() {
 
       {/* CUBE */}
 
-      <mesh position={[2, 0, 0]} ref={cubeRef} scale={1.5} castShadow>
+      <mesh position={[2, 0, 0]} ref={cubeRef} scale={1.5}>
         <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="mediumpurple" />
+        <meshStandardMaterial
+          // color="mediumpurple"
+          color={[55.8, 3.2, 20.4]}
+          toneMapped={false}
+        />
       </mesh>
       {/* SPHERE */}
-      <mesh position={[-2, 0, 0]} ref={sphereRef} castShadow>
+      <mesh position={[-2, 0, 0]} ref={sphereRef}>
         <sphereGeometry args={[1, 16, 16]} />
-        <meshStandardMaterial args={[{ color: "orange" }]} />
+        <meshStandardMaterial
+          args={[{ color: "orange" }]}
+          emissive={"orange"}
+          emissiveIntensity={9}
+        />
       </mesh>
       {/* FLOOR */}
       <mesh
-        receiveShadow
         rotation={[-Math.PI * 0.5, 0, 0]}
         scale={10}
         position-y={-1}

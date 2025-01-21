@@ -92,3 +92,39 @@ Blending Works like the blending in image editing softwares and it's how the col
 In case of GlitchEffect, you will for example import "GlitchMode" and use it for prop `mode`
 
 **Just to remind you if you forgot that you can have multiple effects, for example you can nest Viggnete and Glitch to the EffectComposer and you will have both effects**
+
+## For Noise effect, good values for blend function
+
+![_](/notes/images/Screenshot%20from%202025-01-21%2011-11-42.png)
+
+For me, `LUMINOSITY` looks great. (with premultiply)
+
+# For Bloom effect yo ushould use dark background, but also chance the format of the color on your materials
+
+Here you go, this one is from the docs:
+
+```tsx
+<Bloom mipmapBlur luminanceThreshold={1} />
+
+// ❌ will not glow, same as RGB [1,0,0]
+<meshStandardMaterial color="red"/>
+
+// ✅ will glow, same as RGB [2,0,0]
+<meshStandardMaterial emissive="red" emissiveIntensity={2} toneMapped={false} />
+
+// ❌ will not glow, same as RGB [1,0,0]
+<meshBasicMaterial color="red" />
+
+// ❌ will not glow, same as RGB [1,0,0], tone-mapping will clamp colors between 0 and 1
+<meshBasicMaterial color={[2,0,0]} />
+
+// ✅ will glow, same as RGB [2,0,0]
+<meshBasicMaterial color={[2,0,0]} toneMapped={false} />
+
+```
+
+also don't forget to set prop `mipmapBlur` to true
+
+The mipmap blur will use the same mipmapping used for textures A
+Smaller resolutions of the render will be combined into a bloom texture that is then added to the initial render
+It looks great with good performance
