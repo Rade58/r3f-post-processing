@@ -146,3 +146,5 @@ prop values (docusDistance) are notmalized, they go from 0 to 1 according to cam
 so you need to calculate a bit
 
 better use leva to find right values
+
+# Uncomment all effects we did from Viggnete to DepthOfField to check performances
