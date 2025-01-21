@@ -104,7 +104,7 @@ export function Experience() {
           // color="mediumpurple"
           // if you want stronger glow you increse these values
           // we multiply some of them bty 10
-          color={[5.8 * 10, 3.2, 20.4]}
+          color={[5.8 * 10, 3.2, 2.4 * 10]}
           toneMapped={false}
         />
       </mesh>
