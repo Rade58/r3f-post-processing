@@ -27,6 +27,8 @@ import {
 
 // import { useControls } from "leva";
 
+import { Drunk } from "./drunk_effect/Drunk";
+
 export function Experience() {
   // const someControls = useControls("_", { test: 1 });
   const cubeRef = useRef<Mesh>(null);
@@ -93,6 +95,7 @@ export function Experience() {
           bokehScale={6}
         />
         */}
+        <Drunk />
       </EffectComposer>
       {/* -------------------------------------------- */}
       {/* -------------------------------------------- */}
