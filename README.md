@@ -176,3 +176,13 @@ But also I played around with values more than him
 We need to create effect for Post Processing and then make it available in r3f (Main issue)
 
 because post processing is merging the effects into one shader we need to follow very specific rules
+
+What we are going to create is Drunk effect, screen should wiggle and show some nuance of green
+
+Effect is very simple but should cover most of the custom effects you would want to build.
+
+# How to build custom effects with postprocessing or react postprocessing
+
+<https://github.com/pmndrs/postprocessing/wiki/Custom-Effects>
+
+<https://react-postprocessing.docs.pmnd.rs/effects/custom-effects>
