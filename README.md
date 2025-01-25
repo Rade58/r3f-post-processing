@@ -186,3 +186,21 @@ Effect is very simple but should cover most of the custom effects you would want
 <https://github.com/pmndrs/postprocessing/wiki/Custom-Effects>
 
 <https://react-postprocessing.docs.pmnd.rs/effects/custom-effects>
+
+# Background color
+
+I want to see color from the fragment shader also i nthe background
+
+For some reson my background isn't transparent
+
+ommiting `<color>` tag didn't make it transparent
+
+Tried adding gl.alpha = true in `src/12_changing_output_color/App.tsx`, and in css, I set background to transparent for canvas: `src/index.css`, Which also didn't work
+
+Need to look into this
+
+I added hex color with transparency to the `<color>` tag, **which worked, but I had an error**
+
+What I end up doing is setting hex color with alpha value for `<color>` tag, which worked but like Isaid, it showed an error in the console (I used this to see fragment shader color of my custom effect in the background)
+
+`src/12_changing_output_color/App.tsx`

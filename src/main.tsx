@@ -13,7 +13,13 @@ import "./index.css";
 // import { App } from "./6_bloom_effect/App";
 // import { App } from "./7_depth_of_field_effect/App";
 // import { App } from "./8_check_performances_with_a_lot_of_effects/App";
-import { App } from "./9_custom_effect__basic_effect/App";
+// import { App } from "./9_custom_effect__basic_effect/App";
+// import { App } from "./10_props_for_custom_effect_n_ref_forward/App";
+// With this, you won't see any effect, it's like our
+// starting point
+// import { App } from "./11_changing_outputColor_to_be_inputColor/App";
+//
+import { App } from "./12_changing_output_color/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

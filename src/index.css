@@ -32,13 +32,14 @@ body,
   /* background: crimson; */
 }
 
-/* canvas {
-  border: purple solid 2px;
+canvas {
+  /* border: purple solid 2px; */
+  /* doesn't do anything */
+  background: transparent;
 }
-*/
 
 /* some testing */
 
 .testing {
-  background-color: rgb(78, 32, 204);
+  background-color: #4e20cc00;
 }
