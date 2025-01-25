@@ -19,7 +19,12 @@ import "./index.css";
 // starting point
 // import { App } from "./11_changing_outputColor_to_be_inputColor/App";
 //
-import { App } from "./12_changing_output_color/App";
+// import { App } from "./12_changing_output_color/App";
+
+// we will add mainUv function
+// we are not going to use uv from mainImage functio
+// import { App } from "./13_wiggle/App";
+import { App } from "./14_uniforms/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

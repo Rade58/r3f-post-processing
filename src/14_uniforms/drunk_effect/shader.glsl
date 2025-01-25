@@ -1,5 +1,23 @@
+// adding uniforms
+uniform float frequency;
+uniform float amplitude;
 
 
+
+
+// this is how we accomplish wiggle effect
+// Added this function before mainImage
+// because this one will be called first
+// just as a convention (didn't need to be in this order)
+
+// inout means we can both read and write to it
+void mainUv(inout vec2 uv){
+  //
+  // instead of this
+  // uv.y += sin(uv.x * 10.0) * 0.1;
+  // we will use uniforms
+  uv.y += sin(uv.x * frequency) * amplitude;
+}
 
 
 // We are using the WebGL 2 syntax where we can specify more
@@ -32,7 +50,7 @@ void mainImage(
   vec4 color = inputColor;
 
   // multiplying by some green nuance
-  color.rgb *= vec3(0.2, 1.0, 0.5); 
+  color.rgb *= vec3(0.6, 1.0, 0.5); 
 
   
   // insteaad of this
@@ -43,3 +61,5 @@ void mainImage(
   // outputColor = vec4(uv, 1.0, 1.0);
 
 }
+
+
