@@ -24,7 +24,9 @@ import "./index.css";
 // we will add mainUv function
 // we are not going to use uv from mainImage functio
 // import { App } from "./13_wiggle/App";
-import { App } from "./14_uniforms/App";
+// import { App } from "./14_uniforms/App";
+// import { App } from "./15_blending/App";
+import { App } from "./16_animating/App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -29,6 +29,7 @@ import { useControls } from "leva";
 
 import { Drunk } from "./drunk_effect/Drunk";
 import type { DrunkEffect } from "./drunk_effect/DrunkEffect";
+import { BlendFunction } from "postprocessing";
 
 export function Experience() {
   const drunkProps = useControls("Drunk Effect", {
@@ -60,6 +61,9 @@ export function Experience() {
       // multisampling={0}
       >
         <Drunk
+          // we set default to be DARKEN
+          // blendFunction={BlendFunction.DARKEN}
+          // blendFunction={BlendFunction.COLOR_BURN}
           //
           ref={drunkEffectRef}
           // frequency={2}
